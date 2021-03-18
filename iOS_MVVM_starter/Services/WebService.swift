@@ -11,14 +11,14 @@ class Webservice {
     
     func getPosts(url: URL, completion: @escaping (PostModel?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
-                print(error.localizedDescription)
-                completion(nil)
-            } else if let data = data {
+            if let data = data {
                 let postList = try? JSONDecoder().decode(PostModel.self, from: data)
                 if let postList = postList {
                     completion(postList)
                 }
+            } else if let error = error {
+                print(error.localizedDescription)
+                completion(nil)
             }
         }.resume()
     }
