@@ -12,7 +12,8 @@
 		DDEAE7172601D8CF003A688D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEAE7152601D8CF003A688D /* Main.storyboard */; };
 		DDEAE7192601D8CF003A688D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEAE7182601D8CF003A688D /* Assets.xcassets */; };
 		DDEAE71C2601D8CF003A688D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEAE71A2601D8CF003A688D /* LaunchScreen.storyboard */; };
-		DDEAE73F26030EDE003A688D /* Post.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEAE73E26030EDE003A688D /* Post.Model.swift */; };
+		DDEAE73F26030EDE003A688D /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEAE73E26030EDE003A688D /* PostModel.swift */; };
+		DDEAE74326030F9D003A688D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEAE74226030F9D003A688D /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		DDEAE7182601D8CF003A688D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEAE71B2601D8CF003A688D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDEAE71D2601D8CF003A688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDEAE73E26030EDE003A688D /* Post.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Model.swift; sourceTree = "<group>"; };
+		DDEAE73E26030EDE003A688D /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		DDEAE74226030F9D003A688D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,7 @@
 		DDEAE72B2601DAE8003A688D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DDEAE73E26030EDE003A688D /* Post.Model.swift */,
+				DDEAE73E26030EDE003A688D /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +113,7 @@
 		DDEAE72D2601DB23003A688D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DDEAE74226030F9D003A688D /* PostCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -187,7 +190,8 @@
 			files = (
 				DDEAE7102601D8CF003A688D /* AppDelegate.swift in Sources */,
 				DDEAE7122601D8CF003A688D /* SceneDelegate.swift in Sources */,
-				DDEAE73F26030EDE003A688D /* Post.Model.swift in Sources */,
+				DDEAE73F26030EDE003A688D /* PostModel.swift in Sources */,
+				DDEAE74326030F9D003A688D /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
